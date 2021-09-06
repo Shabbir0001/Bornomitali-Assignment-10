@@ -1,0 +1,54 @@
+.edit-box{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border: 2px solid lightsalmon;
+    padding: 10px;
+    border-radius: 40px;
+    background: #31001cf1;
+    position: fixed;
+    width: 78%;
+}
+
+.close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    color: red;
+    text-shadow: 3px 3px 5px black;
+}
+
+
+.close-btn:hover{
+    transition: 0.3s;
+    color: green;
+}
+
+
+.edit-box h3{
+    font-size: 25px;
+    float: center;
+    color: lightgoldenrodyellow;
+}
+
+.editable-data{
+    display: flex;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    background: #a77ef180;
+    box-shadow: 5px 5px 10px black;
+}
+
+.editable-data img{
+    max-width: 80px;
+    border-radius: 20px;
+}

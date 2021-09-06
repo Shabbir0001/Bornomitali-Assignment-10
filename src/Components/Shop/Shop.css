@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
+@import url('https://fonts.maateen.me/charukola-ultra-light/font.css');
+
+
+.shop-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.card-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    height: 215px;
+    background: #f0939300;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.card-container:hover{
+    height: 370px;
+    background: #e8e5eb;
+    box-shadow: 0 8px 25px #ac1400;
+    animation: cardAnimate 3s linear infinite; 
+    animation-delay: .05s;
+}
+@keyframes cardAnimate{
+    0%, 100%{
+        box-shadow: 0  0 10px 10px #940e82;
+    }
+    50%, 50%{
+        box-shadow: 0 0 10px 10px #129444;
+    }
+    25%, 75%{
+        box-shadow: 0  0 10px 10px #101052;
+    }
+    75%, 25%{
+        box-shadow: 0 0 10px 10px #7c0d0d;
+    }
+    100%, 0%{
+        box-shadow: 0 0 10px 10px #80800d;
+    }
+}
+
+.image-box{
+    position: relative;
+    border-radius: 20px;
+    background: transparent;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    text-align: center;
+}
+
+.image-box h2{
+    color: #a000bd;
+    font-weight: bold;
+    font-family: 'CharukolaUltraLight', sans-serif;
+
+}
+
+.card-container:hover .image-box{
+    top: -80px;
+    transition: 0.6s ease-in-out;
+}
+
+.image-box img{
+    max-width: 100%;
+    border-radius: 40px;
+}
+
+.content-box{
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.content-box h1{
+    color: green;
+    margin: 10px;
+}
+
+.content-box h1:hover{
+    transition: 0.3s;
+    color: #bb0e2b;
+}
+
+.content-box button{
+    position: relative;
+    background: blue;
+    border: 1px solid blue;
+    padding: 5px 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: greenyellow;
+    font-family: 'Petit Formal Script', cursive;
+}
+
+.content-box button:hover{
+    box-shadow: 0 5px 15px #aa070779;
+    height: 50px;
+    background: #08662f7e;
+    color: red;
+}
+
+.card-container:hover .content-box{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -15px;
+    transition-delay: 0.3s;
+}

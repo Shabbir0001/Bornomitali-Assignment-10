@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+.loading-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.checkOut-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.product-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid yellow;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+    /* justify-content: center; */
+}
+
+.product-container img{
+    max-width: 350px;
+    border-radius: 50px;
+    box-shadow: 5px 10px 15px 0px #302c2c55;
+}
+
+
+.product-container h3{
+    padding: 20px;
+    font-size: 30px;
+    color: red;
+}
+
+.process-order{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 40px;
+    color: blue;
+    align-items: center;
+    font-size: 20px;
+    border: none;
+}
+
+
+.process-order:hover{
+    transition: .5s ease-in;
+    border-radius: 50%;
+    color: lightpink;
+    border: 2px solid yellow;
+
+}
+
+
+.process-order h3{
+    padding: 10px;
+}
+
+.process-order h3 span {
+    border-top: 2px solid gray;
+    color: green;
+    padding: 5px;
+    background: #ffffff52;
+    border-radius: 10px;
+}
+
+
+
+.select-quantity p {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid #ffd900;
+    transition: 0.5s ease-in-out;
+
+}
+
+.select-quantity{
+    display: flex;
+    flex-direction: row;
+}
+
+.select-quantity i{
+    font-size: 30px;
+    margin: 10px;
+    color: blue;
+    cursor: pointer;
+}
+
+.select-quantity i:hover{
+    transition: 0.4s;
+    color: green;
+}
+
+
+.process-order-btn{
+    height: 50px;
+    width: 150px;
+    margin: 20px;
+    border-radius: 44%;
+    font-size: 25px;
+    cursor: pointer;
+    background: #73800073;
+    color: #30022c;
+    border: none;
+    box-shadow: 2px 3px 8px white;
+    font-family: 'Lobster', cursive;
+}
+
+
+.process-order-btn:hover{
+    background: #01141f91;
+    color: red;
+    transition: 0.4s;
+    width: 160px;
+}
+
+
+@media(max-width: 800px){
+    .checkOut-container{
+        flex-direction: column;
+    }
+
+    .product-container img{
+        max-width: 300px;
+    }
+}
+
+
+@media(min-width: 900px){
+    .product-container{
+        left: -120px;
+    }
+}

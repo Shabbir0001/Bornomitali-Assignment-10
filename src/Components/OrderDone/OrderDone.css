@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.orderDone-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+
+.orderDone-container img{
+    margin: 20px;
+    height: 300px;
+    width: 400px;
+}
+
+
+.orderDone-container h1{
+    font-family: 'Lobster', cursive;
+}
+
+.orderDone-container h1:nth-child(3){
+    color: #15ff00;
+}
+.shop-more{
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    color: lightpink;
+}
+
+.shop-more:hover{
+    transition: 0.3s;
+    color: red;
+    background: #1b013386;
+    box-shadow: 2px 5px 8px white;
+}

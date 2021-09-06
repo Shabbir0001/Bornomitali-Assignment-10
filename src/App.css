@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.maateen.me/charu-chandan-3d/font.css');
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.logo-container img{
+    max-width: 60px;
+    border-radius: 50%;
+    animation: logoImgAnimate 5s linear infinite;
+}@keyframes logoImgAnimate{
+    0%, 100%{
+        box-shadow: -2px 2px 8px #ebe4ea;
+    }
+    50%, 50%{
+        box-shadow: -2px 2px 8px #e1e0e9;
+    }
+    
+    75%, 25%{
+        box-shadow: 2px 2px 8px #f5eeee;
+    }
+    100%, 0%{
+        box-shadow: -2px 2px 8px #ebe4ea;
+    }
 }
 
-.App-link {
-  color: #61dafb;
+
+.logo-container .logo-txt{
+    color: #4534da;
+    margin-left: 5px;
+    font-size: 40px;
+    animation: logoAnimate 3s linear infinite;
+    cursor: pointer;
+    font-family: 'CharuChandan3D', sans-serif;
+}
+@keyframes logoAnimate{
+    0%, 100%{
+        color: #eb1ccf;
+    }
+    50%, 50%{
+        color: #20e66c;
+    }
+    25%, 75%{
+        color: #00d9ff;
+        text-shadow: none;
+    }
+    75%, 25%{
+        color: #e00f0f;
+    }
+    100%, 0%{
+        color: #ffff00;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
+
+.nav-item{
+    padding: 5px 15px;
+    margin: 5px 15px;
+    color: #990606d5;
+    font-family: 'Lobster', cursive;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: -3px 5px 10px gray;
+}
+
+
+.nav-item:hover{
+    transition: 0.3s;
+    color: #9acd32;
+    background: #0c3455a2;
+}
+
+.nav-item-login{
+    padding: 5px 20px;
+    margin: 5px 20px;
+    color: green;
+    font-family: 'Lobster';
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: -3px 5px 10px gray;
+}
+
+.nav-item-login:hover{
+    transition: 0.3s;
+    color: red;
+    background: #00800057;
+    padding: 7px 22px
+}
+
+.nav-item-user{
+    padding: 5px 20px;
+    margin: 5px 20px;
+    color: green;
+    font-family: 'Lobster';
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: -3px 5px 10px gray;
+}
+
+
+.nav-item-user:hover{
+    transition: 0.3s;
+    color: red;
+    background: #00800057;
+    padding: 7px 22px
+}
+
+
+@media(max-width: 800px){
+        .navbar-container{
+            width: 70%;
+            flex-flow: row wrap;
+            font-size: 15px;
+            margin: 0;
+        }
+        .header-container{
+            flex-direction: column;
+        }
+        .logo-container{
+            width: 30%;
+            font-size:10px;
+        }
+        .logo-container .logo-txt{
+            font-size: 25px;
+        }
+
+        .nav-item{
+            margin: 2px 8px;
+        }
+}
+
+
+

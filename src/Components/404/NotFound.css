@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.notFound-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.notFound-container img{
+    max-width: 400px;
+    border-radius: 50%;
+    animation: imgAnimate 3s linear infinite;
+}
+@keyframes imgAnimate{
+    0%, 100%{
+        box-shadow: 15px 15px 8px #ebe4ea;
+    }
+    50%, 50%{
+        box-shadow: -15px 15px 8px #e232c800;
+    }
+    25%, 75%{
+        box-shadow: 15px 15px 8px #ebe4ea;
+    }
+    75%, 25%{
+        box-shadow: -15px 15px 8px #0a0eec;
+    }
+    100%, 0%{
+        box-shadow: 15px 15px 8px #ebe4ea;
+    }
+}
+
+.notFound-container h1{
+    color: #fff;
+    margin: 20px ;
+    font-family: 'Indie Flower', cursive;
+}

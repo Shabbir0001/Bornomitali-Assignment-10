@@ -1,0 +1,92 @@
+
+.form-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 750px){
+    .form-container{
+        border-left: 3px solid white;
+    }
+}
+
+
+.form-container h1{
+    margin-top: 50px;
+    font-weight: bold;
+    color: bisque;
+}
+
+
+.form-container form{
+    margin-top: 100px;
+}
+
+
+.input-text{
+    color: green;
+    font-size: 20px;
+    height: 35px;
+    background: #2651e04b;
+    padding: 5px;
+    margin-top: 20px;
+    border: 1px solid #b3ff00;
+    border-radius: 10px;
+}
+
+.input-text:hover{
+    transition: 0.3s ease-in-out;
+    background: #ff00002a;
+}
+
+.input-file{
+    font-size: 18px;
+    font-weight: bold;
+    background: #25f0c43a;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+    outline: none;
+    margin-top: 40px;
+}
+
+::-webkit-file-upload-button{
+    color: #220505;
+    font-weight: bold;
+    background: #7c4d614d;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 0 1px black;
+    outline: none;
+    cursor: pointer;
+}
+
+.input-file:hover{
+    transition: 0.6s;
+    background: #70ac104d;
+    color: aqua;
+}
+
+
+.submit{
+    margin-top: 40px;
+    font-size: 20px;
+    background: #ff00b35e;
+    border: 1px solid #ffae00;
+    padding: 10px 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #42884b;
+    cursor: pointer;
+}
+
+
+.submit:hover{
+    transition: 0.3s;
+    background: #0000ff54;
+    font-size: 23px;
+    box-shadow:  2px  2px 2px  white;
+}
