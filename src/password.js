@@ -1,1 +1,1 @@
-export const password = "PROMA";
+export const password = "OPEN";
